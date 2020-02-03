@@ -1,0 +1,23 @@
+{
+  "name": "List",
+  "version": "1.0.0",
+  "description": "* Similar to the Linux command of ls - This app will create a command line using Node\r * Using the Node.js standard library documentation\r * Get access to the file system module inside of the project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shownola/List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "nls": "index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/shownola/List/issues"
+  },
+  "homepage": "https://github.com/shownola/List#readme"
+}
