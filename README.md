@@ -11,3 +11,9 @@
 * Change index.js file permissions
 * Add comment to index.js file to allow it to be treated as an executable. - $ chmod +x index.js
 * Link the project
+* Determine if file or folder using fs.lstat
+
+OPTIONS:
+* Maintain an array of the results from each lstat. As each callback is invoked, add the stats object to this array. When array is full, log everything in - Works but not ideal!
+* Wrap the lstat call with a promise, use async/await syntax to process lstat call one at a time.
+* Wrap the lstat call with a promise, use async/await + the Promise.all helper method to process lstat calls all at once.  THIS IS THE RIGHT WAY
