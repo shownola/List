@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const util = require('util');
+const chalk = require('chalk');
 
 
 // METHOD #2
@@ -14,6 +15,9 @@ const lstat = fs.promises.lstat;
 // const { lstat } = fs.promises;
 
 // EITHER: err === an error object, which means something went wrong or err === null, which means everything is OK
+
+console.log(process.argv);
+
 fs.readdir(process.cwd(), async (err, filenames) => {
   if(err){
     console.log(err);
@@ -26,6 +30,12 @@ fs.readdir(process.cwd(), async (err, filenames) => {
 
   for(let stats of allStats){
     const index = allStats.indexOf(stats);
+
+    if(stats.isFile()){
+      console.log(filename[index]);
+    } else {
+      console.log(chalk.bold(filenames[index]));
+    }
 
     console.log(filenams[index], stats.isFile());
   }

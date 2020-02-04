@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/shownola/List/issues"
   },
-  "homepage": "https://github.com/shownola/List#readme"
+  "homepage": "https://github.com/shownola/List#readme",
+  "dependencies": {
+    "chalk": "^3.0.0"
+  }
 }
